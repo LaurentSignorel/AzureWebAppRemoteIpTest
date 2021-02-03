@@ -9,8 +9,9 @@ namespace AzureWebAppRemoteIpTest.WebApp.Models
     public class RequestPasswordViewModel
     {
         [Display(Name = "Email")]
-        [Required(ErrorMessage = "L'adresse E-Mail de récupération doit être saisi.")]
-        [EmailAddress(ErrorMessage = "Vous devez saisir une adresse E-Mail valide.")]
         public string Email { get; set; }
+
+        [Display(Name = "IP Address")]
+        public string Ip { get; set; }
     }
 }
